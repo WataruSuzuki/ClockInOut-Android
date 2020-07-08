@@ -1,4 +1,4 @@
-package jp.co.jchankchan.clockinout
+package jp.co.jchankchan.myplayground
 
 import org.junit.Test
 

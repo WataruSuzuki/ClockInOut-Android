@@ -1,4 +1,4 @@
-package jp.co.jchankchan.clockinout.ui.dashboard
+package jp.co.jchankchan.myplayground.ui.dashboard
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

@@ -1,2 +1,2 @@
 include ':app'
-rootProject.name='ClockInOut'
+rootProject.name='MyPlaygroundApp'
