@@ -24,6 +24,15 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+    flavorDimensions "dependency"
+    productFlavors {
+        fromModule {
+            dimension "dependency"
+        }
+        fromMaven {
+            dimension "dependency"
+        }
+    }
 }
 
 dependencies {
@@ -38,7 +47,11 @@ dependencies {
     implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
     implementation 'androidx.navigation:navigation-fragment-ktx:2.3.2'
     implementation 'androidx.navigation:navigation-ui-ktx:2.3.2'
-    implementation project(path: ':mylibrary')
+
+    fromModuleImplementation project(path: ':mylibrary')
+    //noinspection GradleDynamicVersion
+    fromMavenImplementation 'jp.co.jchankchan:playground-android-library:+'
+
     testImplementation 'junit:junit:4.13.1'
     androidTestImplementation 'androidx.test:runner:1.3.0'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'

@@ -5,7 +5,9 @@ buildscript {
     repositories {
         google()
         jcenter()
-        
+        maven {
+            url 'https://watarusuzuki.github.io/Playground-Android-Library/'
+        }
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:3.5.4'
@@ -19,7 +21,9 @@ allprojects {
     repositories {
         google()
         jcenter()
-        
+        maven {
+            url 'https://watarusuzuki.github.io/Playground-Android-Library/'
+        }
     }
 }
 
