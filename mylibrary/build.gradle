@@ -37,7 +37,7 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
 }
 
-def repo = new File(rootDir, "repository")
+def repo = new File(rootDir, "docs")
 apply plugin: 'maven'
 
 uploadArchives {
